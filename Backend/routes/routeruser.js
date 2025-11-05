@@ -3,6 +3,6 @@ const expres=require('express')
 const router=expres.Router()
 
 router.post("/singUp",usercontroller.addUser);
-router.get("/sing",usercontroller.ok);
+router.post("/sing",usercontroller.getUser);
 
 module.exports=router
